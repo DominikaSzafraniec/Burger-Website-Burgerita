@@ -1,0 +1,26 @@
+@use "header";
+@use "nav";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.wrapper {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.font-title {
+	font-family: "Denk One", sans-serif;
+}
+
+.font-description {
+	font-family: "Fauna One", serif;
+}
+
+.font-main {
+	font-family: "Freckle Face", cursive;
+}
