@@ -1,43 +1,47 @@
-@media(min-width: 360px) {
-    .nav {
-        &__logo {
-            width: 18%;
-        }
-    }
+@media (min-width: 360px) {
+	.nav {
+		&__logo {
+			width: 15%;
+		}
+	}
 }
 
-@media(min-width: 576px) {
-    .nav {
-        &__logo {
-            width: 15%;
-        }
-    }
+@media (min-width: 576px) {
+	.nav {
+		&__logo {
+			width: 12%;
+		}
+	}
 }
 
-// TODO: LOGO NA WIEKSZE BREAKPOINTY NIZ 576
-
+@media (min-width: 768px) {
+	.nav {
+		&__logo {
+			width: 8%;
+		}
+	}
+}
 
 @media (min-width: 992px) {
 	.nav {
+		&__logo {
+			width: 10%;
+		}
 
-        &__logo {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 10%;
-        }
-    
-        &__logo-img {
-            width: 60%;
-        }
-        
+		&__logo-img {
+			width: 60%;
+		}
+
 		&__items {
+			position: relative;
 			display: flex;
 			align-items: center;
 			margin-left: auto;
+			margin-top: 0;
 		}
 
 		&__link {
+			display: inline-block;
 			padding: 1rem 2rem;
 			font-size: 1.8rem;
 			text-decoration: none;
@@ -52,27 +56,14 @@
 			}
 		}
 
-		&__button-order {
-			padding: 1.5rem 2.5rem;
-			margin: 0 4rem;
-			background: #ffb524;
-			border: none;
-			box-shadow: 0 0 2px #c4c4c4;
-			text-transform: uppercase;
-			cursor: pointer;
-			transition: background-color 0.3s;
+		
 
-			&:hover {
-				background: #dd970c;
-			}
+		&__cart {
+			margin-left: 0;
 		}
 
-        &__cart {
-            margin-left: 0;
-        }
-
-        &__bars {
-            display: none;
-        }
+		&__bars {
+			display: none;
+		}
 	}
 }

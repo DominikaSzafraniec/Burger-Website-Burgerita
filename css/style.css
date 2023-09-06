@@ -1,4 +1,5 @@
 .nav {
+  position: relative;
   padding: 3rem 4rem 0 4rem;
 }
 .nav .wrapper {
@@ -9,14 +10,41 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 25%;
+  width: 20%;
   cursor: pointer;
 }
 .nav__logo-img {
   width: 100%;
 }
 .nav__items {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  position: absolute;
+  padding: 4rem 2rem;
+  width: 100%;
+  left: 50%;
+  top: 10rem;
+  transform: translateX(-150%);
+  transition: transform 0.4s;
+  background-color: #f4f4f4;
+}
+.nav__link {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 2.5rem;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #333;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+}
+.nav__link:hover {
+  background-color: #333;
+  color: #fff;
 }
 .nav__cart {
   position: relative;
@@ -42,6 +70,19 @@
   background-color: #ffb524;
   font-weight: bold;
 }
+.nav__button-order {
+  position: relative;
+  padding: 1.5rem 4.5rem;
+  background: #ffb524;
+  border: none;
+  box-shadow: 0 0 2px #c4c4c4;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.nav__button-order:hover {
+  background: #dd970c;
+}
 .nav__bars {
   margin-left: 3.4rem;
   font-size: 3rem;
@@ -54,30 +95,35 @@
 
 @media (min-width: 360px) {
   .nav__logo {
-    width: 18%;
+    width: 15%;
   }
 }
 @media (min-width: 576px) {
   .nav__logo {
-    width: 15%;
+    width: 12%;
+  }
+}
+@media (min-width: 768px) {
+  .nav__logo {
+    width: 8%;
   }
 }
 @media (min-width: 992px) {
   .nav__logo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 10%;
   }
   .nav__logo-img {
     width: 60%;
   }
   .nav__items {
+    position: relative;
     display: flex;
     align-items: center;
     margin-left: auto;
+    margin-top: 0;
   }
   .nav__link {
+    display: inline-block;
     padding: 1rem 2rem;
     font-size: 1.8rem;
     text-decoration: none;
@@ -89,19 +135,6 @@
   .nav__link:hover {
     background-color: #333;
     color: #fff;
-  }
-  .nav__button-order {
-    padding: 1.5rem 2.5rem;
-    margin: 0 4rem;
-    background: #ffb524;
-    border: none;
-    box-shadow: 0 0 2px #c4c4c4;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  .nav__button-order:hover {
-    background: #dd970c;
   }
   .nav__cart {
     margin-left: 0;
@@ -136,4 +169,8 @@ html {
 
 .font-main {
   font-family: "Freckle Face", cursive;
+}
+
+.show {
+  transform: translateX(-50%);
 }/*# sourceMappingURL=style.css.map */
