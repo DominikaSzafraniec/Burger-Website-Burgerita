@@ -80,6 +80,11 @@
 
         &__button-order {
             margin-left: 3.2rem;
+            transition: background-color .3s;
+
+            &:hover {
+                background-color: #c79228;
+            }
         }
 
         &__cart {

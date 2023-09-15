@@ -1,6 +1,9 @@
 .nav {
-	position: relative;
+	position: fixed;
+	width: 100%;
 	padding: 1rem 2rem;
+	z-index: 2;
+	background-color: #fff;
 	&__logo {
 		width: 50px;
 	}
@@ -13,7 +16,7 @@
 		top: 100%;
 		width: 100%;
 		padding: 2rem 0;
-		// background-color: #eee;
+		background-color: #fff;
 		text-align: center;
 		z-index: -1;
 		transform: translateY(-130%);

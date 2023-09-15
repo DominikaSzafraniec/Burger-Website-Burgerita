@@ -1,6 +1,9 @@
 .nav {
-  position: relative;
+  position: fixed;
+  width: 100%;
   padding: 1rem 2rem;
+  z-index: 2;
+  background-color: #fff;
 }
 .nav__logo {
   width: 50px;
@@ -13,6 +16,7 @@
   top: 100%;
   width: 100%;
   padding: 2rem 0;
+  background-color: #fff;
   text-align: center;
   z-index: -1;
   transform: translateY(-130%);
@@ -134,6 +138,10 @@
   }
   .nav__button-order {
     margin-left: 3.2rem;
+    transition: background-color 0.3s;
+  }
+  .nav__button-order:hover {
+    background-color: #c79228;
   }
   .nav__cart {
     margin-left: 6rem;
