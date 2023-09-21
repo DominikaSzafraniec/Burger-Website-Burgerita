@@ -1,3 +1,50 @@
+.header {
+  padding: 2rem;
+}
+.header__title {
+  font-family: "Dela Gothic One", cursive;
+  font-size: 3rem;
+  line-height: 1.8;
+}
+.header__highlight {
+  display: block;
+  position: relative;
+  padding: 0 1rem;
+  color: #ffb524;
+  text-transform: uppercase;
+}
+.header__highlight::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  width: 173px;
+  background-color: #000;
+  z-index: -1;
+}
+.header img {
+  width: 100%;
+}
+.header__info-box {
+  text-align: center;
+}
+.header__info {
+  margin: 2rem 0;
+  font-size: 1.4rem;
+}
+.header__btn-menu {
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  background-color: #FFB524;
+  text-transform: uppercase;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 .nav {
   position: fixed;
   width: 100%;
@@ -80,6 +127,11 @@
   color: #333;
 }
 
+header {
+  position: relative;
+  top: 68px;
+}
+
 @media (min-height: 280px) {
   .nav__items {
     top: 0;
@@ -99,6 +151,18 @@
   .nav__logo {
     width: 70px;
   }
+  header {
+    top: 84px;
+  }
+  .header__title {
+    font-size: 3.4rem;
+  }
+  .header__highlight::before {
+    width: 200px;
+  }
+  .header__info {
+    font-size: 1.6rem;
+  }
 }
 @media (min-width: 768px) and (min-height: 420px) {
   .nav__link, .nav__button-order {
@@ -106,6 +170,11 @@
   }
   .nav__button-order {
     margin-top: 4rem;
+  }
+}
+@media (min-width: 768px) {
+  .header__title {
+    font-size: 3.6rem;
   }
 }
 @media (min-width: 992px) and (min-height: 0px) {
@@ -153,6 +222,10 @@
   }
   .nav__cart-amount {
     font-size: 1.4rem;
+  }
+  header {
+    position: relative;
+    top: 122px;
   }
 }
 * {
