@@ -1,136 +1,210 @@
-@media (min-height: 280px){
-    
-        .nav {
-            &__items {
-                top: 0;
-            }
-        }
-    
+@media (min-height: 280px) {
+	.nav {
+		&__items {
+			top: 0;
+		}
+	}
 }
-@media (min-height: 359px){
-    
-        .nav {
-            &__items {
-                top: 50px;
-            }
-        }
-    
+@media (min-height: 359px) {
+	.nav {
+		&__items {
+			top: 50px;
+		}
+	}
 }
 
 @media (min-height: 460px) {
-    .nav {
-        &__items {
-            top: 100%;
-        }
-    }
+	.nav {
+		&__items {
+			top: 100%;
+		}
+	}
 }
-
 
 @media (min-width: 576px) {
-    .nav {
-        &__logo {
-            width: 70px;
-        }
-    }
+	.nav {
+		&__logo {
+			width: 70px;
+		}
+	}
 
-    header {
-        top: 84px;
-    }
+	header {
+		top: 84px;
+	}
 
-    .header {
-        &__title {
-            font-size: 3.4rem;
-        }
+	.header {
+		&__title {
+			font-size: 3.4rem;
+		}
 
-        &__highlight::before {
-            width: 200px;
-        }
+		&__highlight::before {
+			width: 200px;
+		}
 
-        &__info {
-            font-size: 1.6rem;
-        }
-    }
-    
+		&__info {
+			font-size: 1.6rem;
+		}
+
+		&__main-img-box {
+			width: 300px;
+		}
+	}
 }
 
-@media (min-width: 768px) and (min-height: 420px){
-    .nav {
-        &__link, &__button-order {
-            font-size: 1.8rem;
-        }
-        &__button-order {
-            margin-top: 4rem;
-        }
-       
-    }
+@media (min-width: 768px) and (min-height: 420px) {
+	.nav {
+		&__link,
+		&__button-order {
+			font-size: 1.8rem;
+		}
+		&__button-order {
+			margin-top: 4rem;
+		}
+	}
 }
 
 @media (min-width: 768px) {
-    .header {
-        &__title {
-            font-size: 3.6rem;
-        }
-        
-    }
+	.header {
+		&__title {
+			font-size: 3.6rem;
+		}
+		&__btn-menu {
+			padding: 1.5rem 3.5rem;
+			font-size: 1.6rem;
+		}
+	}
 }
 
-@media (min-width: 992px) and (min-height: 0px){
-    .nav {
-        padding: 2rem 3rem;
-        &__logo {
-            width: 90px;
-        }
-        &__bars {
-            display: none;
+@media (min-width: 992px) and (min-height: 0px) {
+	.nav {
+		padding: 2rem 3rem;
+		&__logo {
+			width: 90px;
+		}
+		&__bars {
+			display: none;
+		}
+
+		&__items {
+			position: relative;
+			margin-left: auto;
+			transform: translateY(0);
+			z-index: 10;
+			width: auto;
+		}
+
+		&__links {
+			display: inline-block;
+			flex-direction: row;
+		}
+
+		&__link {
+			transition: background-color 0.3s, color 0.3s;
+			&:hover {
+				background-color: #333;
+				color: #fff;
+			}
+		}
+
+		&__button-order {
+			margin-left: 3.2rem;
+			transition: background-color 0.3s;
+
+			&:hover {
+				background-color: #c79228;
+			}
+		}
+
+		&__cart {
+			margin-left: 6rem;
+			font-size: 3rem;
+		}
+
+		&__cart-amount-box {
+			width: 20px;
+			height: 20px;
+		}
+
+		&__cart-amount {
+			font-size: 1.4rem;
+		}
+	}
+
+	header {
+		position: relative;
+		top: 122px;
+	}
+}
+
+@media (min-width: 992px) {
+	.header {
+		padding: 4rem 3rem;
+
+		.wrapper {
+			display: flex;
+		}
+
+        &__title {
+            font-size: 6.8rem;
+            line-height: 1.4;
         }
 
-        &__items {
-            position: relative;
-            margin-left: auto;
-            transform: translateY(0);
-            z-index: 10;
-            width: auto;
+        &__highlight::before {
+            left: 0;
+            top: 5px;
+            width: 385px;
+            transform: translateX(0);
         }
 
-        &__links {
-            display: inline-block;
-            flex-direction: row;
+		&__info-box {
+			width: 50%;
+			text-align: left;
+		}
+
+		&__img-box {
+            margin-top: 2rem;
+			width: 50%;
+		}
+
+        &__main-img-box {
+            width: 80%;
         }
 
-        &__link {
-            transition: background-color .3s, color .3s;
-            &:hover {
-                background-color: #333;
-                color: #fff;
-            }
+        &__info-promo {
+            top: -45px;
+            left: 35px;
+            width: 150px;
+            font-size: 1.6rem;
+
         }
 
-        &__button-order {
-            margin-left: 3.2rem;
-            transition: background-color .3s;
-
-            &:hover {
-                background-color: #c79228;
-            }
+        &__promo-arrow {
+            width: 100px;
+            top: -45px;
         }
 
-        &__cart {
-            margin-left: 6rem;
-            font-size: 3rem;
+        &__discount-box {
+            right: 20px;
+            width: 100px;
+            height: 90px;
         }
 
-        &__cart-amount-box {
-            width: 20px;
-            height: 20px;
+        &__discount-price {
+            font-size: 3.4rem;
+        }
+	}
+}
+
+@media (min-width: 1200px) {
+    .header {
+        &__info-promo {
+            left: 80px;
         }
 
-        &__cart-amount {
-            font-size: 1.4rem;
+        &__promo-arrow {
+            width: 130px;
+            top: -55px;
+            left: 50%;
         }
-    }
-
-    header {
-        position: relative;
-        top: 122px;
     }
 }
