@@ -138,7 +138,7 @@
 
 @media (min-width: 992px) {
 	.header {
-		padding: 4rem 3rem;
+		padding: 0 3rem;
 
 		.wrapper {
 			display: flex;
@@ -152,22 +152,28 @@
         &__highlight::before {
             left: 0;
             top: 5px;
-            width: 385px;
+            width: 450px;
             transform: translateX(0);
         }
 
 		&__info-box {
-			width: 50%;
+			margin-top: 2rem;
+			width: 60%;
 			text-align: left;
 		}
 
+		&__info {
+			font-size: 1.8rem;
+			width: 70%;
+		}
+
 		&__img-box {
-            margin-top: 2rem;
-			width: 50%;
+            // margin-top: 7rem;
+			width: 40%;
 		}
 
         &__main-img-box {
-            width: 80%;
+            width: 100%;
         }
 
         &__info-promo {
@@ -197,6 +203,10 @@
 
 @media (min-width: 1200px) {
     .header {
+
+		&__title {
+			font-size: 8rem;
+		}
         &__info-promo {
             left: 80px;
         }

@@ -281,7 +281,7 @@ header {
 }
 @media (min-width: 992px) {
   .header {
-    padding: 4rem 3rem;
+    padding: 0 3rem;
   }
   .header .wrapper {
     display: flex;
@@ -293,19 +293,23 @@ header {
   .header__highlight::before {
     left: 0;
     top: 5px;
-    width: 385px;
+    width: 450px;
     transform: translateX(0);
   }
   .header__info-box {
-    width: 50%;
+    margin-top: 2rem;
+    width: 60%;
     text-align: left;
   }
+  .header__info {
+    font-size: 1.8rem;
+    width: 70%;
+  }
   .header__img-box {
-    margin-top: 2rem;
-    width: 50%;
+    width: 40%;
   }
   .header__main-img-box {
-    width: 80%;
+    width: 100%;
   }
   .header__info-promo {
     top: -45px;
@@ -327,6 +331,9 @@ header {
   }
 }
 @media (min-width: 1200px) {
+  .header__title {
+    font-size: 8rem;
+  }
   .header__info-promo {
     left: 80px;
   }
