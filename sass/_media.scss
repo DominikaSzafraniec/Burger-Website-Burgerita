@@ -28,9 +28,6 @@
 		}
 	}
 
-	header {
-		top: 84px;
-	}
 
 	.header {
 		&__title {
@@ -129,11 +126,6 @@
 			font-size: 1.4rem;
 		}
 	}
-
-	header {
-		position: relative;
-		top: 122px;
-	}
 }
 
 @media (min-width: 992px) {
@@ -144,17 +136,17 @@
 			display: flex;
 		}
 
-        &__title {
-            font-size: 6.8rem;
-            line-height: 1.4;
-        }
+		&__title {
+			font-size: 6.8rem;
+			line-height: 1.4;
+		}
 
-        &__highlight::before {
-            left: 0;
-            top: 5px;
-            width: 450px;
-            transform: translateX(0);
-        }
+		&__highlight::before {
+			left: 0;
+			top: 5px;
+			width: 450px;
+			transform: translateX(0);
+		}
 
 		&__info-box {
 			margin-top: 2rem;
@@ -168,53 +160,50 @@
 		}
 
 		&__img-box {
-            // margin-top: 7rem;
 			width: 40%;
 		}
 
-        &__main-img-box {
-            width: 100%;
-        }
+		&__main-img-box {
+			width: 100%;
+		}
 
-        &__info-promo {
-            top: -45px;
-            left: 35px;
-            width: 150px;
-            font-size: 1.6rem;
+		&__info-promo {
+			top: -45px;
+			left: 35px;
+			width: 150px;
+			font-size: 1.6rem;
+		}
 
-        }
+		&__promo-arrow {
+			width: 100px;
+			top: -45px;
+		}
 
-        &__promo-arrow {
-            width: 100px;
-            top: -45px;
-        }
+		&__discount-box {
+			right: 20px;
+			width: 100px;
+			height: 90px;
+		}
 
-        &__discount-box {
-            right: 20px;
-            width: 100px;
-            height: 90px;
-        }
-
-        &__discount-price {
-            font-size: 3.4rem;
-        }
+		&__discount-price {
+			font-size: 3.4rem;
+		}
 	}
 }
 
 @media (min-width: 1200px) {
-    .header {
-
+	.header {
 		&__title {
 			font-size: 8rem;
 		}
-        &__info-promo {
-            left: 80px;
-        }
+		&__info-promo {
+			left: 80px;
+		}
 
-        &__promo-arrow {
-            width: 130px;
-            top: -55px;
-            left: 50%;
-        }
-    }
+		&__promo-arrow {
+			width: 130px;
+			top: -55px;
+			left: 50%;
+		}
+	}
 }

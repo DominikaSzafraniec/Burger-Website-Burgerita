@@ -90,7 +90,9 @@
 }
 
 .nav {
-  position: fixed;
+  position: sticky;
+  top: 0;
+  left: 0;
   width: 100%;
   padding: 1rem 2rem;
   z-index: 2;
@@ -171,11 +173,6 @@
   color: #333;
 }
 
-header {
-  position: relative;
-  top: 68px;
-}
-
 @media (min-height: 280px) {
   .nav__items {
     top: 0;
@@ -194,9 +191,6 @@ header {
 @media (min-width: 576px) {
   .nav__logo {
     width: 70px;
-  }
-  header {
-    top: 84px;
   }
   .header__title {
     font-size: 3.4rem;
@@ -274,10 +268,6 @@ header {
   .nav__cart-amount {
     font-size: 1.4rem;
   }
-  header {
-    position: relative;
-    top: 122px;
-  }
 }
 @media (min-width: 992px) {
   .header {
@@ -343,6 +333,13 @@ header {
     left: 50%;
   }
 }
+.section-promo {
+  margin-top: 6rem;
+  background-image: url("../img/promo-bg-small.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 * {
   margin: 0;
   padding: 0;
