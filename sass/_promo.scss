@@ -1,34 +1,38 @@
 .section-promo {
     margin-top: 6rem;
-    padding: 4rem 3rem;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.985) 0%, rgba(0, 0, 0, 0.727) 45%, rgba(0, 0, 0, 0.595) 100%), url('../img/promo-bg-small.jpg');
+    padding: 6rem 3rem;
+    background-color: rgba(0, 0, 0, 0.75);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.329) -100%, rgba(0, 0, 0, 1) 80%), url('../img/promo-bg-small.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position:-10%, center;
     color: #fff;
 
     img {
-        width: 100px;
-        height: 100px;
+        width: 130px;
+        height: 130px;
         border-radius: 100%;
         object-fit: cover;
     }
 
     &__img {
         position: absolute;
-        top: -50px;
+        top: -65px;
         left: 50%;
         transform: translateX(-50%);
     }
 
     &__item {
+        display: flex;
+        flex-direction: column;
         position: relative;
-        padding: 7rem 3rem 4rem 3rem;
+        padding: 9rem 3rem 4rem 3rem;
         border: 1px solid #5e5d5d;
     }
 
     &__item1 {
-        margin-top: 8rem;
-        margin-bottom: 8rem;
+        margin-top: 12rem;
+        margin-bottom: 12rem;
     }
 
     &__title {
@@ -44,10 +48,34 @@
 
     &__btn {
         display: inline-block;
+        margin-top: 2rem;
         padding: 1rem 3rem;
         font-family: 'Denk One', sans-serif;
         text-transform: uppercase;
         background-color: #FFB524;
         border: none;
+        align-self: center;
+        cursor: pointer;
+        border: 1px solid transparent;
+        transition: background .3s, color .3s, border .3s;
+
+        &:hover {
+            color: #fff;
+            background: none;
+            border: 1px solid #fff;
+        }
+    }
+
+    &__promo-info {
+        margin-top: 6rem;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1.6rem;
+        font-family: 'Fauna One', sans-serif;
+    }
+
+    &__promo-info-underline {
+        border-bottom: 3px solid #FFB524;
+        font-weight: bold;
     }
 }

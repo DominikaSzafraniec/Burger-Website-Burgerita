@@ -46,6 +46,7 @@
 			width: 300px;
 		}
 	}
+
 }
 
 @media (min-width: 768px) and (min-height: 420px) {
@@ -68,6 +69,33 @@
 		&__btn-menu {
 			padding: 1.5rem 3.5rem;
 			font-size: 1.6rem;
+		}
+	}
+
+	.section-promo {
+		background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.329) -100%, rgba(0, 0, 0, 1) 80%), url('../img/promo-bg-big.jpg');
+
+		&__box {
+			display: flex;
+			justify-content: center;
+			gap: 3rem;
+		}
+
+		&__item {
+			margin-top: 13rem;
+		}
+
+		&__item1 {
+			margin-bottom: 0;
+			width: 50%;
+		}
+
+		&__item2 {
+			width: 50%;
+		}
+
+		&__btn {
+			margin-top: auto;
 		}
 	}
 }
@@ -130,7 +158,7 @@
 
 @media (min-width: 992px) {
 	.header {
-		padding: 0 3rem;
+		padding: 6rem 3rem;
 
 		.wrapper {
 			display: flex;
@@ -189,6 +217,34 @@
 			font-size: 3.4rem;
 		}
 	}
+
+	.section-promo {
+		img {
+			width: 140px;
+			height: 140px;
+		}
+
+		&__img {
+			top: -70px;
+		}
+
+		&__box {
+			gap: 10rem;
+		}
+
+		&__item {
+			margin-top: 17rem;
+		}
+
+		&__item1 {
+			width: 30%;
+		}
+
+		&__item2 {
+			width: 30%;
+		}
+	}
+	
 }
 
 @media (min-width: 1200px) {
@@ -204,6 +260,43 @@
 			width: 130px;
 			top: -55px;
 			left: 50%;
+		}
+	}
+
+	.section-promo {
+		padding: 10rem 3rem;
+		img {
+			width: 170px;
+			height: 170px;
+		}
+
+		&__img {
+			top: -85px;
+		}
+
+		&__item {
+			padding-top: 12rem;
+		}
+
+		&__item1 {
+			width: 25%;
+		}
+
+		&__item2 {
+			width: 25%;
+		}
+
+		&__title {
+			font-size: 2.2rem;
+		}
+
+		&__info {
+			margin-bottom: 3.5rem;
+			font-size: 1.5rem;
+		}
+
+		&__btn {
+			padding: 1rem 4rem;
 		}
 	}
 }
