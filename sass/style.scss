@@ -1,6 +1,7 @@
 @use "header";
 @use "nav";
 @use "promo";
+@use "menu";
 @use "media";
 
 
@@ -49,7 +50,7 @@ html {
 	color: #FFB524;
 	text-align: center;
 	font-weight: lighter;
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 }
 
 .section-title {
@@ -58,7 +59,7 @@ html {
 	color: #fff;
 	text-align: center;
 	font-weight: lighter;
-	font-size: 2rem;
+	font-size: 2.4rem;
 }
 
 
@@ -68,7 +69,7 @@ html {
 	}
 
 	.section-title {
-		font-size: 2.4rem;
+		font-size: 2.6rem;
 	}
 }
 
@@ -84,10 +85,10 @@ html {
 
 @media(min-width: 992px) {
 	.sub-title {
-		font-size: 2rem;
+		font-size: 2.4rem;
 	}
 
 	.section-title {
-		font-size: 3.2rem;
+		font-size: 4rem;
 	}
 }

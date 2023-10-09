@@ -1,0 +1,148 @@
+.section-menu {
+  padding: 4rem 2rem;
+  &__bg {
+    display: none;
+  }
+
+  .sub-title,
+  .section-title {
+    padding-left: 1rem;
+    text-align: left;
+  }
+
+  .section-title {
+    color: #333;
+  }
+
+  &__options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.4rem;
+    font-family: "Denk One", sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  &__option {
+    padding: 0.5rem 1rem;
+
+    &:hover {
+      background-color: #ffb524;
+    }
+  }
+
+  &__boxes {
+    padding: 0 1rem;
+  }
+
+  &__box {
+    position: relative;
+    margin-bottom: 3rem;
+    margin-top: 4.5rem;
+    padding: 0 1rem 3rem 1rem;
+    border: 1px solid #ece8e8;
+    background-color: #f9f6f6;
+
+    &--title {
+      position: absolute;
+      top: -13.5px;
+      left: 15px;
+      padding: 0.5rem 1rem;
+      background-color: #333;
+      color: #fff;
+      font-family: "Denk One", sans-serif;
+      font-size: 1.6rem;
+    }
+
+    &--name {
+      display: inline-block;
+      margin-bottom: 1rem;
+      font-family: "Denk One", sans-serif;
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+
+    &--menu {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+      // margin-top: 1.5rem;
+    }
+
+    &--ingredients {
+      color: #1e1e1e;
+      font-family: "Fauna One", sans-serif;
+      font-size: 1.4rem;
+      // align-self: flex-start;
+    }
+
+    &--price {
+      margin-top: 1rem;
+      padding: 0.7rem 1rem;
+      background-color: #ffb524;
+      font-family: "Denk One", sans-serif;
+      font-size: 1.4rem;
+      transition: color 0.3s, background-color 0.3s;
+      cursor: pointer;
+      i {
+        margin-right: 1rem;
+      }
+
+      &:hover {
+        color: #fff;
+        background-color: #333;
+      }
+    }
+
+    &--item {
+      margin-top: 4.5rem;
+    }
+  }
+
+  // repair --> ????
+
+  &__name-box {
+    width: 100%;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      height: 1px;
+      background-color: #ffb524;
+      width: 20px;
+    }
+    &::after {
+      content: "";
+      display: inline-block;
+      height: 1px;
+      background-color: #ffb524;
+    }
+  }
+
+  // repair <---
+
+  &__img {
+    position: relative;
+    height: 100px;
+    background-image: url("../img/menu-burger-mobile.png");
+    background-size: cover;
+    background-position: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.575);
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
