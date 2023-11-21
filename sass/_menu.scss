@@ -26,6 +26,14 @@
     cursor: pointer;
   }
 
+  &__underline {
+    margin: 1rem 0;
+  
+    height: 1px;
+    background-color: #ffb524;
+    width: 100%;
+  }
+
   &__option {
     padding: 0.5rem 1rem;
 
@@ -46,24 +54,50 @@
     border: 1px solid #ece8e8;
     background-color: #f9f6f6;
 
+    &--burger-second {
+      margin-top: 7rem;
+    }
+
     &--title {
       position: absolute;
-      top: -13.5px;
+      top: -15px;
       left: 15px;
       padding: 0.5rem 1rem;
       background-color: #333;
       color: #fff;
       font-family: "Denk One", sans-serif;
       font-size: 1.6rem;
+      
+    }
+
+    &--sub-box {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
     }
 
     &--name {
-      display: inline-block;
-      margin-bottom: 1rem;
+      position: relative;
+      margin-left: 2rem;
+      padding: 0 1rem;
       font-family: "Denk One", sans-serif;
       text-transform: uppercase;
       font-size: 1.6rem;
       font-weight: bold;
+      background-color: #f9f6f6;
+      z-index: 1;
+      
+    }
+
+
+    &--underline {
+      position: absolute;
+      right: 0;
+      height: 1px;
+      background-color: #ffb524;
+      width: 100%;
+      z-index: 0;
     }
 
     &--menu {
@@ -71,14 +105,14 @@
       flex-direction: column;
       align-items: flex-start;
       gap: 1rem;
-      // margin-top: 1.5rem;
+      margin-top: 1.5rem;
     }
 
     &--ingredients {
+      
       color: #1e1e1e;
       font-family: "Fauna One", sans-serif;
       font-size: 1.4rem;
-      // align-self: flex-start;
     }
 
     &--price {
@@ -104,27 +138,6 @@
     }
   }
 
-  // repair --> ????
-
-  &__name-box {
-    width: 100%;
-
-    &::before {
-      content: "";
-      display: inline-block;
-      height: 1px;
-      background-color: #ffb524;
-      width: 20px;
-    }
-    &::after {
-      content: "";
-      display: inline-block;
-      height: 1px;
-      background-color: #ffb524;
-    }
-  }
-
-  // repair <---
 
   &__img {
     position: relative;
